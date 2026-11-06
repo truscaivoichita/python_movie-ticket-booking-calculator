@@ -133,3 +133,11 @@ extra_charges = 0
 if show_time == "Evening":
     extra_charges = 2
     print("Extra charges will be applied")
+
+# Step 13
+# Now, add an else clause to your if statement and print No extra charges will be applied inside the else body. This will print the message only when the extra charges condition is false.
+
+# Then, below the else clause, use the print() call to display a message that shows Extra charges: followed by the updated value of extra_charges and check the output in the terminal.
+#else:
+    print("No extra charges will be applied")
+print(f"Extra charges: {extra_charges}")
