@@ -118,3 +118,18 @@ print(f"Discount: {discount}")
 # Now change the value of the is_member variable to False as the user is not a member.
 
 # After that, you will see that the discount value now remains 0, because both conditions must be satisfied for the discount to apply.
+
+# Step 12
+# Now create a variable named extra_charges and set it to 0. This will represent extra charges to apply to the movie ticket for evening shows.
+
+# The equality operator (==) checks whether two values are equal and evaluates to True or False. It is different from the assignment operator (=), which stores a value in a variable:
+
+# Example Code
+# color = 'red' # Assigns 'red' to color
+# print(color == 'red') # True
+# print(color == 'blue') # False
+# Then, create an if statement to check if show_time is equal to the string Evening. Inside the body of the if statement, update the extra_charges value to 2 and print Extra charges will be applied in the terminal.
+extra_charges = 0
+if show_time == "Evening":
+    extra_charges = 2
+    print("Extra charges will be applied")
