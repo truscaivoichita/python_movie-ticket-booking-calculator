@@ -90,7 +90,7 @@ discount = 0
     # print('value is truthy')
 # Create an if statement to check if is_member is truthy. Inside the body of the if statement, update the discount value to 3 and print User qualifies for membership discount to the terminal.
 
-if is_member:
+if is_member and age >= 21:
     discount = 3
     print("User qualifies for membership discount")
 
@@ -103,3 +103,13 @@ if is_member:
 else:
     print("User does not qualify for membership discount")
 print(f"Discount: {discount}")
+
+# Step 10
+# In Python, the and operator is used to check if multiple conditions are true. Here's how you can use it to combine two conditions in an if statement:
+
+# Example Code
+# if condition1 and condition2:
+    # Code to execute if all conditions are True
+# The membership discount should only apply to members if their age is greater than or equal to 21.
+
+# Update the condition of the if is_member: line by using the and operator to combine the existing condition with another condition checking if age is greater than or equal to 21.
