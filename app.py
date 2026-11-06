@@ -41,3 +41,16 @@ show_time = "Evening"
 # Remember to indent the body of the if statement and surround the message with single or double quotes inside the print() call.
 if age > 17:
     print("User is eligible to book a ticket")
+
+# Step 4
+# The greater than or equal operator (>=) checks whether the value on its left is greater than or equal to the value on its right. Unlike the greater than operator (>), >= also evaluates to True when the two values are equal:
+
+# Example Code
+# score = 50
+# print(score > 50) # False
+# print(score >= 50) # True
+# Now you will check whether the user is allowed to book an evening show based on their age.
+
+# Create an if statement to check if age is greater than or equal to 21. Inside the body of the if statement, print User is eligible for Evening shows.
+if age >= 21:
+    print("User is eligible for Evening shows")
