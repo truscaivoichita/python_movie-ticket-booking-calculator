@@ -54,3 +54,15 @@ if age > 17:
 # Create an if statement to check if age is greater than or equal to 21. Inside the body of the if statement, print User is eligible for Evening shows.
 if age >= 21:
     print("User is eligible for Evening shows")
+
+# Step 5
+# In the previous step, you checked a condition using an if statement. The else clause is used to handle the case when the condition is false. Here's the syntax of an if...else statement:
+
+# Example Code
+# if condition:
+    # Code to execute if condition is True
+# else:
+    # Code to execute if condition is False
+# Now, add an else clause to your if statement and print User is not eligible for Evening shows inside the else body. This will print only when the condition in the if statement is false.
+else:
+    print("User is not eligible for Evening shows")
