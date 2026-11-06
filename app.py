@@ -154,3 +154,14 @@ print(f"Extra charges: {extra_charges}")
 # In the example above, Stay at home is printed because the first condition is true, even though is_raining is False.
 
 # Extra charges should also apply on weekends. Update the condition of the if show_time == 'Evening': line by using the or operator to combine the existing condition with a second condition checking if is_weekend is truthy.
+
+# Step 15
+# Now you will check if the user satisfies the conditions to book a movie ticket. Users with age 21 or above can always book tickets without any restrictions.
+
+# Create an if statement to check if age is greater than or equal to 21. Inside the body of the if statement, print Ticket booking condition satisfied to the terminal.
+
+# Then, add an else clause to your if statement and print Ticket booking failed due to restrictions inside the else body.
+if age >= 21:
+    print("Ticket booking condition satisfied")
+else:
+    print("Ticket booking failed due to restrictions")
