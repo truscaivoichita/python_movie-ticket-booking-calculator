@@ -166,8 +166,11 @@ if age >= 21 or age>=18 and (show_time == "Evening" or is_member):
     service_charges = 0
     if seat_type == "Premium":
         service_charges = 5
+    elif seat_type == "Gold":
+        service_charges = 3
     else:
         service_charges = 1
+    print(f"Service charges: {service_charges}")
 else:
     print("Ticket booking failed due to restrictions")
 
@@ -222,3 +225,18 @@ else:
 
 # Step 19
 # Still inside the body of the outer if statement, add an else clause to the nested if seat_type == 'Premium': statement and update the service_charges value to 1 inside the else body. Make sure to keep the else indented by four spaces to stay inside the outer if statement body.
+
+# Step 20
+# The if...elif...else statement is used to check multiple conditions in order.
+
+# Example Code
+# if condition1:
+    # Code to execute if condition1 is True
+# elif condition2:
+    # Code to execute if condition1 is False and condition2 is True
+# else:
+    # Code to execute if all conditions are False
+# Still inside the body of the outer if statement, add an elif clause between the if seat_type == 'Premium': and else: lines and check if seat_type is equal to Gold. Inside the body of the elif clause, update the value of service_charges to 3.
+
+# Below the nested if...elif...else statement, use the print() call to display a message that shows Service charges: followed by the updated value of service_charges. Then, check the output in the terminal.
+#
