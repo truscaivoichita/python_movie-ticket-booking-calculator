@@ -75,3 +75,10 @@ else:
 # Below the is_member variable create another variable named is_weekend to indicate whether the movie show is on a weekend and set its value to False. Do not surround the value with quotes.
 is_member = True
 is_weekend = False
+
+# Step 7
+# The user qualifies for a membership discount if they are a member.
+
+# Create a variable named discount and set its value to 0. This will store the discount the user gets on the movie ticket.
+discount = 0
+print(discount)
