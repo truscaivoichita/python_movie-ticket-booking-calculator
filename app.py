@@ -73,7 +73,7 @@ else:
 # Create a variable named is_member to indicate whether the user is a member and set its value to True.
 
 # Below the is_member variable create another variable named is_weekend to indicate whether the movie show is on a weekend and set its value to False. Do not surround the value with quotes.
-is_member = True
+is_member = False
 is_weekend = False
 
 # Step 7
@@ -113,3 +113,8 @@ print(f"Discount: {discount}")
 # The membership discount should only apply to members if their age is greater than or equal to 21.
 
 # Update the condition of the if is_member: line by using the and operator to combine the existing condition with another condition checking if age is greater than or equal to 21.
+
+# Step 11
+# Now change the value of the is_member variable to False as the user is not a member.
+
+# After that, you will see that the discount value now remains 0, because both conditions must be satisfied for the discount to apply.
