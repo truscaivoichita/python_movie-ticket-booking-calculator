@@ -130,7 +130,7 @@ print(f"Discount: {discount}")
 # print(color == 'blue') # False
 # Then, create an if statement to check if show_time is equal to the string Evening. Inside the body of the if statement, update the extra_charges value to 2 and print Extra charges will be applied in the terminal.
 extra_charges = 0
-if show_time == "Evening":
+if show_time == "Evening" or is_weekend:
     extra_charges = 2
     print("Extra charges will be applied")
 
@@ -141,3 +141,16 @@ if show_time == "Evening":
 #else:
     print("No extra charges will be applied")
 print(f"Extra charges: {extra_charges}")
+
+# Step 14
+# The or operator is used to check whether at least one of two conditions is true. Here's how you can use it with a comparison in an if statement:
+
+# Example Code
+# day = 'Sunday'
+# is_raining = False
+
+# if day == 'Sunday' or is_raining:
+    # print('Stay at home')
+# In the example above, Stay at home is printed because the first condition is true, even though is_raining is False.
+
+# Extra charges should also apply on weekends. Update the condition of the if show_time == 'Evening': line by using the or operator to combine the existing condition with a second condition checking if is_weekend is truthy.
