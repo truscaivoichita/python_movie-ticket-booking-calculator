@@ -161,7 +161,7 @@ print(f"Extra charges: {extra_charges}")
 # Create an if statement to check if age is greater than or equal to 21. Inside the body of the if statement, print Ticket booking condition satisfied to the terminal.
 
 # Then, add an else clause to your if statement and print Ticket booking failed due to restrictions inside the else body.
-if age >= 21 or age>=18 and show_time == "Evening":
+if age >= 21 or age>=18 and (show_time == "Evening" or is_member):
     print("Ticket booking condition satisfied")
 else:
     print("Ticket booking failed due to restrictions")
@@ -187,3 +187,14 @@ else:
 
 # Update the condition of the if age >= 21: line. Use the and operator to build an expression checking if age is greater than or equal to 18 and show_time is not Evening. Then use the or operator to combine that expression with the existing condition. Do not create new variables.
 #
+# Step 17
+# There is one more exception to the booking rules. Users who are at least 18 years old but younger than 21 can book evening shows if they are members.
+
+# As you saw in the previous step, and has a higher precedence than or, so conditions joined with and are grouped together, as if they were wrapped in parentheses. You can use parentheses () to change how conditions are grouped.
+
+# Example Code
+# if condition1 and (condition2 or condition3):
+    # Code to execute if conditions evaluate to True
+# else:
+    # Code to execute if conditions evaluate to False
+# Update the condition of the if age >= 21 or age >= 18 and show_time != 'Evening': line to add another condition using the or operator to check if is_member is truthy. Use parentheses () to group the show_time != 'Evening' and is_member conditions together as shown in the above example.
