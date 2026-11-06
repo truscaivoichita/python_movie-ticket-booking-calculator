@@ -161,7 +161,29 @@ print(f"Extra charges: {extra_charges}")
 # Create an if statement to check if age is greater than or equal to 21. Inside the body of the if statement, print Ticket booking condition satisfied to the terminal.
 
 # Then, add an else clause to your if statement and print Ticket booking failed due to restrictions inside the else body.
-if age >= 21:
+if age >= 21 or age>=18 and show_time == "Evening":
     print("Ticket booking condition satisfied")
 else:
     print("Ticket booking failed due to restrictions")
+
+# Step 16
+# Users who are at least 18 years old but younger than 21 can book tickets, but only when the show_time is not Evening.
+
+# The inequality operator (!=) checks whether two values are not equal. It evaluates to True when the values are different, and False when they are the same:
+
+# Example Code
+# day = 'Monday'
+# print(day != 'Sunday') # True
+# print(day != 'Monday') # False
+# When and and or are used in the same expression, and has a higher precedence than or. This means the conditions joined with and are grouped together, and the result of that group is then combined with the or condition:
+
+# Example Code
+# has_key = True
+# knows_code = False
+# is_daytime = False
+
+# print(has_key or knows_code and is_daytime) # True
+# In the example above, knows_code and is_daytime is evaluated first, giving False as the result. The whole expression then becomes has_key or False, which is True.
+
+# Update the condition of the if age >= 21: line. Use the and operator to build an expression checking if age is greater than or equal to 18 and show_time is not Evening. Then use the or operator to combine that expression with the existing condition. Do not create new variables.
+#
